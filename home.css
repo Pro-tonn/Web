@@ -53,7 +53,7 @@ body {
     }
   }
   span{
-    text-align: right;
+    position: absolute;
     color: rgb(47, 213, 255);
     list-style-type: none;
   }
