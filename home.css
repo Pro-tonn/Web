@@ -53,10 +53,8 @@ body {
     }
   }
   span{
-    text-align: center;
-    padding-bottom: 35%;
-    padding-top:35%;
-    color: greenyellow;
+    text-align: right;
+    color: rgb(47, 213, 255);
     list-style-type: none;
   }
   #myNAv{
