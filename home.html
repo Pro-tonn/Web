@@ -1,27 +1,33 @@
-<!doctype html>
-<link href="home.css" rel="stylesheet">
+<!DOCTYPE html>
 <html>
-<body>
-  <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Projects</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-  </div>
-  </div>
-  <span style="font-size:45px;cursor:pointer;" onclick="openNav()"> Proton</span>
+  <head>
+    <script src="https://kit.fontawesome.com/66530834a8.js" crossorigin="anonymous"></script>
+  </head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Logo
+  </div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top">Stephen Tinubu</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">35 days left</p>
+  </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+    <a href="#" class="fab fa-facebook-f"></a>
+    <a href="#" class="fab fa-google"></a>
+    <a href="#" class="fab fa-linkedin-in"></a>
+    <a href="#" class="fab fa-instagram"></a>
+  </div>
+</div>
 </body>
-<script>
-  /* Open */
-function openNav() {
-    document.getElementById("myNav").style.height = "100%";
-  }
-  /* Close */
-  function closeNav() {
-    document.getElementById("myNav").style.height = "0%";
-  }
-  </script>
 </html>
