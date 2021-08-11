@@ -10,13 +10,11 @@ body, html {height: 100%}
 /* social media buttons */
 
 .fab {
-  /* padding: 10px;
+  
   font-size: 200%;
-  width: 50px;
-  text-align: center;
+  width: 30px;
   text-decoration: none;
-  margin: 5px 1px;
-  border-radius: 50%; */
+
 }
 
 .fa:hover {
