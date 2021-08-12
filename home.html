@@ -23,10 +23,11 @@
     
   </div>
   <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">Stephen Tinubu</h1>
+    <h1 class="w3-jumbo w3-animate-top">Website development in progress</h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">Date: <span id="datetime"></span></p>
+    <hr  id='ct6'>
   </div>
+  
   <div class="w3-display-bottomleft w3-padding-large">
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
     <a href="https://www.facebook.com/stephen.tinubu/" target="_blank" class="fab fa-facebook-f"></a>
@@ -38,25 +39,26 @@
 </div>
 
 <script>
-  /* Open */
-function openNav() {
-  document.getElementById("myNav").style.height = "100%";
-}
-
-/* Close */
-function closeNav() {
-  document.getElementById("myNav").style.height = "0%";
-}
-
 //Menu Animations
   function myFunction(x) {
   x.classList.toggle("change");
 }
 
 //Date
-  var dt = new Date();
-  document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+function display_ct6() {
+var x = new Date()
+var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+hours = x.getHours( ) % 12;
+hours = hours ? hours : 12;
+var x1="It is " + hours + ":" +  x.getMinutes() + ":" +  x.getSeconds() + ampm +" "+ (x.getMonth()+ 1) + "/" + x.getDate() + "/" + x.getFullYear() +" " + "in Chicago"; 
+document.getElementById('ct6').innerHTML = x1;
+display_c6();
+ }
+ function display_c6(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct6()',refresh)
+}
+display_c6()
 </script>
-
 </body>
 </html>
