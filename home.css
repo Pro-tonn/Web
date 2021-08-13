@@ -22,8 +22,8 @@ body, html {height: 100%}
 }
 .w3-animate-top{
   font-family: "Raleway", sans-serif;
-  background: linear-gradient(to right, #f32170,
-          #ff6b08, #cf23cf, #eedd44);
+  background: linear-gradient(to right, tomato,
+  #cf23cf, teal, #eedd44, orange);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
