@@ -4,7 +4,7 @@
 body,h1 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url('https://cdn.wallpapersafari.com/26/53/9xLy1r.jpg');
+  background-image: url('https://www.setaswall.com/wp-content/uploads/2017/03/Artistic-4K-Wallpaper-3840x2160.jpg');
   min-height: 100%;
   background-position: center;
   background-size: cover;
@@ -63,6 +63,16 @@ body, html {height: 100%}
   color: peachpuff;
   position: absolute;
   left: 420px;
+
+}
+.fas {
+  font-size: 110%;
+  text-decoration: none;
+}
+.fa-lightbulb{
+  color:white;
+  max-width: 31cm;
+  margin:auto;
 }
 
 .overlay {
