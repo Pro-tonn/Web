@@ -20,6 +20,13 @@ body, html {height: 100%}
 .w3-jumbo{
   text-align: center;
 }
+.w3-animate-top{
+  font-family: "Raleway", sans-serif;
+  background: linear-gradient(to right, #f32170,
+          #ff6b08, #cf23cf, #eedd44);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
 
 
 
