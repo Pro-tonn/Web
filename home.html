@@ -11,32 +11,34 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
-<body>
-
+<body onload=display_time();><span id='ct6' ></span>
 <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
   <div class="w3-display-topleft w3-padding-large w3-xlarge">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
         <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
+        <a href="#">Resume</a>
+        <a href="#">Projects</a>
+        <a href="#">Setup</a>
+        <a href="#">Code path</a>
       </div>
     </div>
     
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
   </div>
+  
   <div class="w3-display-middle">
+    <div class="development"><p>Website is still in development!!!</p></div>
     <h1 class="w3-jumbo w3-animate-top">Hello there!</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <hr  id='ct6'>
+    <hr class="w3-border-grey" style="margin:auto;width:100%">
+    <p><span id='date-time'></span></p>
   </div>
   
   <div class="w3-display-bottomleft w3-padding-large">
     Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
     <a href="https://www.facebook.com/stephen.tinubu/" target="_blank" class="fab fa-facebook-f"></a>
-    <a href="mailto:hello@stephentinubu.com" target="_blank"" class="fab fa-google"></a>
+    <a href="mailto:hello@stephentinubu.com" target="_blank" class="fab fa-google"></a>
     <a href="https://www.linkedin.com/in/stephen-tinubu/" target="_blank" class="fab fa-linkedin-in"></a>
     <a href="https://www.instagram.com/iamstephen365/" target="_blank" class="fab fa-instagram"></a>
     <a href="https://github.com/Pro-tonn" target ="_blank" class="fab fa-github"></a>
@@ -50,20 +52,15 @@
 }
 
 //Date
-function display_ct6() {
-var x = new Date()
-var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
-hours = x.getHours( ) % 12;
-hours = hours ? hours : 12;
-var x1="It is " + hours + ":" + (00 + x.getMinutes()) + ":" + (00 + x.getSeconds()) + ampm +" "+ (x.getMonth()+ 1) + "/" + x.getDate() + "/" + x.getFullYear() +" " + "in Chicago"; 
-document.getElementById('ct6').innerHTML = x1;
-display_c6();
- }
- function display_c6(){
-var refresh=1000; // Refresh rate in milli seconds
-mytime=setTimeout('display_ct6()',refresh)
+function time_out(){
+  var refresh=1000;
+  mytime=setTimeout('display_time()', refresh)
 }
-display_c6()
+function display_time(){
+var dt = new Date();
+document.getElementById('date-time').innerHTML="It is " + dt.toLocaleTimeString() + " on " + dt.toDateString() + ". Greetings!";
+time_out()
+}
 
 function openNav() {
   document.getElementById("myNav").style.height = "100%";
