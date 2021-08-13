@@ -29,7 +29,14 @@
   </div>
   <div class="w3-display-middle">
     <div class="development"><p>Website is still in development!!!</p></div>
-    <h1 class="w3-jumbo w3-animate-top">Hello there!</h1>
+    <h1 class="w3-jumbo w3-animate-top"><div class="content">
+      <div class="random"><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span></span>
+        <span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span><span class="nbr ltr">0</span></div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  
+    <script src="js/index.js"></script></h1>
     <hr class="w3-border-grey" style="margin:auto;width:40%">
     <marquee behavior="scroll" direction="left" scrollamount="9"><p><span id='date-time'></span></p></marquee>
   </div>
@@ -71,6 +78,50 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
+
+$(document).ready(function(){
+  
+  var $randomnbr = $('.nbr');
+  var $timer= 10;
+  var $it;
+  var $data = 0;
+  var index;
+  var change;
+  var letters = ["H", "e", "l", "l", "o", "t", "h", "e", "r", "e","!"];
+  
+  $randomnbr.each(function(){
+      
+    change = Math.round(Math.random()*100);
+    $(this).attr('data-change', change);
+    
+  });
+  
+  function random(){
+    return Math.round(Math.random()*9);
+  };
+  
+  function select(){
+    return Math.round(Math.random()*$randomnbr.length+1);
+  };
+  
+  function value(){
+    $('.nbr:nth-child('+select()+')').html(''+random()+'');
+    $('.nbr:nth-child('+select()+')').attr('data-number', $data);
+    $data++;
+    
+    $randomnbr.each(function(){
+        if(parseInt($(this).attr('data-number')) > parseInt($(this).attr('data-change'))){
+          index = $('.ltr').index(this);
+          $(this).html(letters[index]);
+          $(this).removeClass('nbr');
+        }
+    });
+    
+  };
+  
+  $it = setInterval(value, $timer);
+    
+});
 </script>
 </body>
 </html>
