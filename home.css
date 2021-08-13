@@ -10,11 +10,6 @@ body, html {height: 100%}
   background-size: cover;
 }
 
-#ct6{
-  padding-top: 40px;
-  background-color: transparent;
-  
-}
 .development{
   text-align: center;
   font-size: 15px;
@@ -26,10 +21,12 @@ body, html {height: 100%}
   text-align: center;
 }
 
+
+
 .fab {
   font-size: 130%;
-  text-align: center;
   text-decoration: none;
+  padding-right: 20px;
 }
 
 .fa:hover {
@@ -38,41 +35,34 @@ body, html {height: 100%}
 
 .fa-facebook-f {
   color: pink;
-  position: absolute;
-  left: 300px;
 }
 
 .fa-google {
   color: orange;
-  position: absolute;
-  left: 330px;
+
 }
 
 .fa-linkedin-in {
   color: teal;
-  position: absolute;
-  left: 360px;
+
 }
 
 .fa-instagram {
   color: tomato;
-  position: absolute;
-  left: 390px;
+
 }
 .fa-github{
   color: peachpuff;
-  position: absolute;
-  left: 420px;
+ 
 
 }
 .fas {
-  font-size: 110%;
+  font-size: 150%;
   text-decoration: none;
 }
 .fa-lightbulb{
   color:white;
-  max-width: 31cm;
-  margin:auto;
+  padding-right: 20px
 }
 
 .overlay {
