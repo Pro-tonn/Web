@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/66530834a8.js" crossorigin="anonymous"></script>
+  </head>
+<title>Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="projects.css">
+<link rel="icon" href="code-solid.svg">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<body onload=display_time();><span id='ct6' ></span>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Resume</a>
+        <a href="#">Setup</a>
+        <a href="#">Code path</a>
+      </div>
+    </div>
+    
+    <span style="font-size:30px;cursor:pointer;color:black" onclick="openNav()">&#9776;</span> 
+  </div>
+  <div class="w3-display-middle">Dumby middle text</div>
+  <!-- Bulb to switch themes -->
+  <div class=w3-display-topright onclick="changeTheme()"><p class="fas fa-lightbulb"  ></p></div>
+
+  <div class="w3-display-bottomleft w3-padding-large" style="font-size:70%; color:black;">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </div>
+
+  <script>
+   function changeTheme() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+    
+    function openNav() {
+      document.getElementById("myNav").style.height = "100%";
+    }
+    
+    function closeNav() {
+      document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+    </body>
+    </html>

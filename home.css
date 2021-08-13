@@ -27,6 +27,7 @@ body, html {height: 100%}
   font-size: 130%;
   text-decoration: none;
   padding-right: 20px;
+  cursor:pointer;
 }
 
 .fa:hover {
@@ -55,14 +56,6 @@ body, html {height: 100%}
   color: peachpuff;
  
 
-}
-.fas {
-  font-size: 150%;
-  text-decoration: none;
-}
-.fa-lightbulb{
-  color:white;
-  padding-right: 20px
 }
 
 .overlay {
