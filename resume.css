@@ -70,8 +70,7 @@
 		}
 
     .main-box{
-      color:tomato;
-      border: 2px solid
+      border: 1px solid;
     }
 
 
@@ -82,10 +81,25 @@
       z-index: 1;
       top: 0;
       left: 0;
-      background-color: #141516;
       overflow-y: hidden;
       transition: 0.5s;
+      background: linear-gradient(-45deg, rgb(245, 166, 76), teal, peachpuff );
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
     }
+    
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
     
     .overlay-content {
       position: relative;
@@ -99,7 +113,7 @@
       padding: 8px;
       text-decoration: none;
       font-size: 120%;
-      color: #818181;
+      color: rgb(21,21,21);
       display: block;
       transition: 0.3s;
     }
