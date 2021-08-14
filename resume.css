@@ -11,7 +11,7 @@
 		    position: relative;
 		    border: 1px solid rgba(255,255,255,0);
 
-		    /* Fixed position for this demo */
+		   
 		    position: fixed;
 		    top:16px;
 		    right:16px;
