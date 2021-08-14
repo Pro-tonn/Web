@@ -3,6 +3,7 @@
 
 		.light-mode-button {
 			background:0;
+      margin-top: 13px;
 		    border: 0;
 		    box-sizing: border-box;
 		    cursor: pointer;
