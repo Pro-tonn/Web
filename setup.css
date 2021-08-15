@@ -1,4 +1,27 @@
-	/* Light Mode Button
+.pagetitle{ 
+  margin-top: 13px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight:  100;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #f35626;
+  background-image: -webkit-linear-gradient(92deg, tomato, #3EB489, royalblue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+/* Light Mode Button
 		--------------------------- */ 
 
 		.light-mode-button {
@@ -71,8 +94,50 @@
 		}
 
     .main-box{
-      border: 1px solid;
+      margin-top: 14in;
+      margin-left: -400px;
+      text-align: left;
+      font-weight: bolder;
    }
+   .name1{
+     margin-top: 10px;
+     font-weight: bold;
+   }
+   .device{
+     font-weight: lighter;
+     color:grey;
+   }
+   .specs{
+     font-size: 16px;
+   }
+   .name2{
+    margin-top: 30px;
+    font-weight: bold;
+  }
+  .specs2{
+    font-size: 16px;
+    margin-bottom: 60px;;
+  }
+  .main-boxs{
+    margin-left: -400px;
+    text-align: left;
+    font-weight: bolder;
+ }
+ .names{
+  margin-top: 10px;
+  font-weight: bold;
+}
+.device{
+  font-weight: lighter;
+  color:grey;
+  margin-bottom: 30px;
+}
+.deviceL{
+  font-weight: lighter;
+  color:grey;
+  margin-bottom: 80px;
+}
+
 
 
     .overlay {
@@ -138,4 +203,9 @@
       top: 15px;
       right: 35px;
       }
+    }
+
+    .w3-display-bottommiddle{
+      font-size: 14px;
+      margin-right:-300px;
     }
