@@ -69,11 +69,71 @@
 		    left: 17px;
 		    background-color: #141516;
 		}
+    .pagetitle{
+      margin-top: 13px;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 40px;
+      font-weight:  100;
+      letter-spacing: 2px;
+      text-align: center;
+      color: #f35626;
+      background-image: -webkit-linear-gradient(92deg, tomato, #3EB489, royalblue);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 10s infinite linear;
+    }
+    
+    @-webkit-keyframes hue {
+      from {
+        -webkit-filter: hue-rotate(0deg);
+      }
+      to {
+        -webkit-filter: hue-rotate(-360deg);
+      }
+    }
+  .w3-display-middle{
+      margin-top:330px;
+    }
 
-  .main-box{
-    border: 1px solid;
+  .fas{
+    margin-left: 495px;
+    margin-right: 10px;
   }
 
+  .main-topbox{
+    border-radius: 15px;
+    border: 2px solid; 
+    width: 700px;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  #subtitle{
+    font-size: 13px;
+  }
+  #details{
+    font-size:13px;
+    margin-bottom: 30px;
+  }
+  .main-middlebox{
+    margin-top:30px;
+    border-radius: 15px;
+    border: 2px solid; 
+    width: 700px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-bottom: 30px;
+  }
+
+  .main-lastbox{
+    margin-top:30px;
+    border-radius: 15px;
+    border: 2px solid; 
+    width: 700px;
+    padding-left: 20px;
+    padding-top: 15px;
+    margin-bottom: 80px;
+  }
+    
     
 
     .overlay {
@@ -112,6 +172,7 @@
     }
     
     .overlay a {
+      /* position:absolute; */
       padding: 8px;
       text-decoration: none;
       font-size: 120%;
@@ -139,4 +200,8 @@
       top: 15px;
       right: 35px;
       }
+    }
+
+    .w3-display-bottommiddle{
+      font-size: 13px;
     }
