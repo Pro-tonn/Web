@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://kit.fontawesome.com/66530834a8.js" crossorigin="anonymous"></script>
+    </head>
+    <title>Resume</title>
+    <link rel="stylesheet" href="blankpage.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="icons\file-regular (1).svg">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <body light-mode="light">
+        <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+            <div class="w3-display-topleft w3-padding-large w3-xlarge">
+               
+              <!-- Menu animation start up -->
+              <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="home.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="code_path.html">Code path</a>
+                    <a href="setup.html">Setup</a>
+                    <a href="about.html">About</a>
+                </div>
+              </div>
+              
+              <span style="font-size:30px;cursor:pointer; position:fixed; color:rgb(177, 174, 174);" onclick="openNav()">&#9776;</span> 
+            </div>
+
+        </div>
+
+
+
+        <div class="w3-display-middle main-box">This is the blank page. Its still under development</div>
+
+
+
+        <script>
+            function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+//Close animation for menu
+//Changing the "style.height" to "style.width" will make the animation start from side to side
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+
+            var app = document.getElementsByTagName("BODY")[0];
+            if (localStorage.lightMode == "dark") {
+                app.setAttribute("light-mode", "dark");
+            }
+        </script>
+    
+    
+        <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
+            <span></span>
+            <span></span>
+        </button> 
+    
+    
+        <script>
+            
+            function toggle_light_mode() {
+                var app = document.getElementsByTagName("BODY")[0];
+                if (localStorage.lightMode == "dark") {
+                    localStorage.lightMode = "light";
+                    app.setAttribute("light-mode", "light");
+                } else {
+                    localStorage.lightMode = "dark";
+                    app.setAttribute("light-mode", "dark");
+                }       
+            }
+    
+            window.addEventListener("storage", function () {
+                if (localStorage.lightMode == "dark") {
+                    app.setAttribute("light-mode", "dark");
+                } else {
+                    app.setAttribute("light-mode", "light");
+                }
+            }, false);
+            
+        </script>
+    
+    </body></html>

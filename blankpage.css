@@ -1,26 +1,4 @@
-.pagetitle{ 
-  margin-top: 13px;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 40px;
-  font-weight:  100;
-  letter-spacing: 2px;
-  text-align: center;
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg, tomato, #3EB489, royalblue);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 10s infinite linear;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-  /* Light Mode Button
+	/* Light Mode Button
 		--------------------------- */ 
 
 		.light-mode-button {
@@ -93,44 +71,7 @@
 		}
 
     .main-box{
-      margin-top: 200px;
-      margin-left: -50px;
-      text-align: left;
-      font-weight: bolder;
-    }
-    .main-boxs{
-      margin-left: -50px;
-      text-align: left;
-      font-weight: bolder;
-   }
-    .name1{
-      margin-left: -50px;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-
-    .device{
-      margin-left: -50px;
-      font-weight: lighter;
-      color:grey;
-    }
-    .deviceL{
-      margin-left: -50px;
-      font-weight: lighter;
-      color:grey;
-      margin-bottom: 40px;
-    }
-    .specs{
-      margin-left: -50px;
-      margin-top: -10px;
-      font-size: 16px;
-      margin-bottom:40px;
-    }
-    .specsL{
-      margin-left: -50px;
-      margin-top: -10px;
-      font-size: 16px;
-      margin-bottom:80px;
+      border: 1px solid;
     }
 
 
@@ -197,8 +138,4 @@
       top: 15px;
       right: 35px;
       }
-    }
-    .w3-display-bottommiddle{
-      font-size: 14px;
-      margin-right: -120px;
     }
