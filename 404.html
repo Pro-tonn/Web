@@ -1,38 +1,28 @@
+<head>
+    <script src="https://kit.fontawesome.com/66530834a8.js" crossorigin="anonymous"></script>
+</head>
 <link rel="stylesheet" href="404.css">
-<div class="error">
+<span><i class="fas fa-exclamation-triangle fa-5"></span></i><h2><span> 4</span><span>0</span><span>4</span></h2>
+<h1 style="margin-top: -80px; font-weight: 100;">Oops seems like the portal gun is broken. Maybe try backtracing your steps?</h1>
+<span><button id="abutton" value="abc">Don't click this buttons</button></span>
+<a href="home" style="border:2px solid; padding: 5px; text-decoration:none; border-radius: 5px; cursor:pointer;" target="_blank">Return Home</a>
 
-    <div class="wrap">
-      <div class="404">
-        <pre><code>
-       <span class="green">&lt;!</span><span>DOCTYPE html</span><span class="green">&gt;</span>
-    <span class="orange">&lt;html&gt;</span>
-        <span class="orange">&lt;style&gt;</span>
-       * {
-                <span class="green">everything</span>:<span class="blue">awesome</span>;
-    }
-         <span class="orange">&lt;/style&gt;</span>
-     <span class="orange">&lt;body&gt;</span> 
-                  ERROR 404!
-            FILE NOT FOUND!
-            <span class="comment">&lt;!--The file you are looking for, 
-              is not where you think it is.--&gt;
-        </span>
-     <span class="orange"></span> 
-            
-    
-    
-    </div>
-    <br />
-    <span class="info">
-    <br />
-    
-    <span class="orange">&nbsp;&lt;/body&gt;</span>
-    
-    <br/>
-          <span class="orange">&lt;/html&gt;</span>
-        </code></pre>
-      </div>
-    </div>
-    
-    
-    </span>
+<script>
+    $(document).ready(function() {
+  $('body').width(window.innerWidth).height(window.innerHeight);
+  $('#abutton').on('click', albert);
+
+  function albert() {
+    $('h1').html('<span>Oh</span> <span>gosh</span><span>,</span> <span>it</span> <span>crashed!</span><span>"!"+!</span>');
+    $('span, button').attr('style', 'cursor:move !important;')
+    $('body').jGravity({
+      target: 'span',
+      ignoreClass: 'dontMove',
+      weight: 25,
+      depth: 100,
+      drag: true
+    });
+    $('#abutton').off('click', albert);
+  }
+});
+</script>
