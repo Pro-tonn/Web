@@ -51,6 +51,23 @@ body, html {height: 100%}
   }
 }
 
+.far{
+  color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, tomato, rgba(253, 210, 173, 0.774), rgba(255, 166, 0, 0.753));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
 .fab {
   font-size: 130%;
   text-decoration: none;

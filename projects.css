@@ -95,10 +95,16 @@
       margin-top:3.5in;
     }
 
-  .fas{
-    margin-left: 485px;
+  .fab{
+      margin-left: 510px;
+      margin-right: 10px;
+    
+    }
+
+  /* .fasL{
+    margin-left: 385px;
     margin-right: 10px;
-  }
+  } */
 
   .main-topbox{
     border-radius: 15px;
