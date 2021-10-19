@@ -91,9 +91,7 @@
         -webkit-filter: hue-rotate(-360deg);
       }
     }
-  .w3-display-middle{
-      margin-top:3.5in;
-    }
+
 
   .fab{
       margin-left: 510px;
@@ -107,6 +105,7 @@
   } */
 
   .main-topbox{
+    margin-top:150px;
     border-radius: 15px;
     border: 2px solid; 
     width: 700px;
