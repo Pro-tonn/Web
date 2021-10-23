@@ -25,17 +25,26 @@
                 </div>
               </div>
               
-              <span style="font-size:30px;cursor:pointer; color:rgb(177, 174, 174);" onclick="openNav()">&#9776;</span> 
+             
             </div>
-
+            <div class="w3-display-topleft w3-padding-large menu">
+                <span style="font-size:30px;cursor:pointer; color:black;" onclick="openNav()">&#9776;</span> 
+            </div>
         </div>
 
+        <!-- link: https://codepen.io/anon/embed/RZogMa?height=500&theme-id=1&slug-hash=RZogMa&default-tab=result#result-box -->
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        
+         
+        </div>
 
-        <div class='w3-display-middle' >
+        <div class='w3-display-middle-right' >
             <div class="card">
                 
                 <div class="container">
-                <img src="p_img.jpg" alt="Stephen Tinubu" >
+                <img src="publicprofile.jfif" alt="Stephen Tinubu" >
 
                   <p class="tbody">Enthusiastic student eager to contribute to success through hard work, attention to detail, and excellent organizational skills. A clear understanding of conceptual principles and self-taught programmer in a wide variety of programming languages like Python, JavaScript, C++, and many more. Motivated to learn, grow and make an impact in the software development industry </p>
                   <a href="#"><i class="fa fa-twitter"></i></a>
@@ -43,9 +52,11 @@
                   <a href="#"><i class="fa fa-facebook"></i></a>
                 </div>
             </div>
-
+        </div>
+        <div class='w3-display-middle-left' ></div>
             <div class="container-about">
-                <h1><b>About me</b></h1>
+                <h1 class='page-title'><b>About me</b></h1>
+                <br>
                 <p>I believe programming is one of the best thing that has ever happened to me. The biggest start to programming is what you intend to use it for. As generic as that sounds it’s pretty helpful. I got interested in a field called “Machine Learning” which the concept is just the way it sounds. Making a software (code) teach itself to do stuff. Major examples I'd like to use are in games like chess and flappy bird where the software (code) is able to play beyond human capabilities. There is still a lot of tips but I tried making this concise as possible.</p>
             </div>
             
@@ -66,39 +77,7 @@ function closeNav() {
   document.getElementById("myNav").style.height = "0%";
 }
 
-            var app = document.getElementsByTagName("BODY")[0];
-            if (localStorage.lightMode == "dark") {
-                app.setAttribute("light-mode", "dark");
-            }
-        </script>
-    
-    
-        <button class="light-mode-button" aria-label="Toggle Light Mode" onclick="toggle_light_mode()">
-            <span></span>
-            <span></span>
-        </button> 
-    
-    
-        <script>
-            
-            function toggle_light_mode() {
-                var app = document.getElementsByTagName("BODY")[0];
-                if (localStorage.lightMode == "dark") {
-                    localStorage.lightMode = "light";
-                    app.setAttribute("light-mode", "light");
-                } else {
-                    localStorage.lightMode = "dark";
-                    app.setAttribute("light-mode", "dark");
-                }       
-            }
-    
-            window.addEventListener("storage", function () {
-                if (localStorage.lightMode == "dark") {
-                    app.setAttribute("light-mode", "dark");
-                } else {
-                    app.setAttribute("light-mode", "light");
-                }
-            }, false);
+
             
         </script>
     
