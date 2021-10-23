@@ -140,7 +140,9 @@ h1 {
       margin-left: 100px;
       margin-right: 220px;
       margin-bottom:180px;
+      padding-bottom:1px;
       background-color: #f35626;
+      
       
     }
 
@@ -155,6 +157,7 @@ h1 {
       text-align: left;
       letter-spacing:2px;
       
+      
     }
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -166,14 +169,18 @@ h1 {
     }
     a {
       text-decoration: none;
-      font-size: 22px;
+      font-size: 18px;
       color: black;
+      padding-right: 20px;
+    
     }
     .container {
       padding-top: 20px;
       padding-left:20px;
       margin-left: 10px;
       padding-right:20px;
+      
+      
     
     }
     .container-about{
@@ -184,8 +191,18 @@ h1 {
       text-align: left;
       font-weight: lighter;
       margin-left: 220px;
+      padding-bottom: 300px;
     }
     .page-title{
-
       color: #f35626;
+    }
+    .resumebox{  
+      text-align: center;
+      font-size: 15px;
+      color:black;
+      border: 2px solid teal;
+      border-radius: 5px;
+    }
+    .resumebox:hover{
+      background-color:teal;
     }
